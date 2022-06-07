@@ -1,4 +1,15 @@
 @import "./clear";
-@import "./header";
+@import "./variables";
 @import "./services";
-@import "./colors";
+@import "./header";
+@import "./buttons";
+
+body {
+  font-family: $mainFont;
+}
+
+.wrapper {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

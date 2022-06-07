@@ -1,0 +1,36 @@
+.button {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: #fff;
+  padding: 13px 20px 13px 47px;
+  border-radius: 3px;
+  background-color: $mainColor2;
+
+  &_colored {
+    background-color: $mainColor1;
+  }
+}
+
+.header__button {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 20px;
+
+    position: absolute;
+    top: 10px;
+    left: 13px;
+  }
+
+  &[data-request="froze"]::after {
+    background: url('/assets/icons/header/froze.png') no-repeat center;
+  }
+
+  &[data-request="calculation"]::after {
+    background: url('/assets/icons/header/calculation.png') no-repeat center;
+  }
+}
