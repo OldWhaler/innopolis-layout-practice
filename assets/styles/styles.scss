@@ -1,12 +1,18 @@
 @import "./clear";
 @import "./variables";
+@import "./headlings";
 @import "./request";
 @import "./header";
 @import "./buttons";
 @import "./request-form";
+@import "./services";
 
 body {
   font-family: $mainFont;
+}
+
+main {
+  background-color: #F2F2F2;
 }
 
 .wrapper {
