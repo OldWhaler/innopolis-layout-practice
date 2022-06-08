@@ -1,0 +1,51 @@
+.request {
+  padding: 65px 0;
+  background-color: #333349;
+  background-image: url('/assets/images/request/bg.jpg');
+
+  &__wrapper {
+    padding: 0 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+  }
+
+  &__benefits {}
+
+  &__headling {
+    & span:first-child {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: $mainColor1;
+    }
+
+    & span:nth-child(2) {
+      display: block;
+      max-width: 460px;
+      font-weight: 100;
+      font-size: 36px;
+      line-height: 42px;
+      color: #fff;
+    }
+
+  }
+
+  &__row {}
+
+  &__row-elem {}
+
+  &__row-icon {}
+
+  &__row-desc {}
+
+  &__form {}
+
+  &__form-header {}
+
+  &__img {}
+
+  &__button {}
+}

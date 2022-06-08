@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Окна Хаус</title>
 </head>
@@ -31,6 +34,55 @@
         <button class="header__button button" data-request="calculation">Заказать расчет</button>
       </div>
     </header>
+  </div>
+
+  <section class="request">
+    <div class="wrapper">
+      <div class="request__wrapper">
+
+        <div class="request__benefits">
+          <h1 class="request__headling">
+            <span>Окна Хаус -</span>
+            <span>Профессиональный подход к остеклению</span>
+          </h1>
+          <div class="request__row">
+            <div class="request__row-elem">
+              <div class="request__row-icon" data-row-icon="window"></div>
+              <!-- <img src="./assets/icons/request/window.png" alt="window icon" class="request__row-icon"> -->
+              <p class="request__row-desc">Современные окна и балконные конструкции по доступным ценам</p>
+            </div>
+            <div class="request__row-elem">
+              <div class="request__row-icon" data-row-icon="qualification"></div>
+              <!-- <img src="./assets/icons/request/qualification.png" alt="qualification icon" class="request__row-icon"> -->
+              <p class="request__row-desc">Квалифицированный подход к решению задач любой сложности</p>
+            </div>
+            <div class="request__row-elem">
+              <div class="request__row-icon" data-row-icon="warranty"></div>
+              <!-- <img src="./assets/icons/request/warranty.png" alt="warranty icon" class="request__row-icon"> -->
+              <p class="request__row-desc">Гарантия высочайшего качества нашей продукции</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="request__form">
+          <h2 class="request__form-header">Вызвать замершика на дом</h2>
+          <input type="text" name="" id="" placeholder="Представьтесь, пожалуйста">
+          <input type="tel" name="" id="" placeholder="Номер телефона">
+          <input type="email" name="" id="" placeholder="E-mail">
+          <label for="request__checkbox"></label>
+          <input type="checkbox" name="" id="request__checkbox" checked>
+          <p>Согласен на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></p>
+          <button class="request__button button button_colored">Отправить заявку</button>
+          <div class="request__img" data-form-img="ruler">
+            <!-- <img src="./assets/images/request/ruler.png" alt="ruler image"> -->
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </section>
+
 
 
 </body>
