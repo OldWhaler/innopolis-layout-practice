@@ -93,18 +93,33 @@ h6 {
 }
 
 .request__wrapper {
-  padding: 0 85px;
+  padding: 0 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 50px;
-  column-gap: 50px;
+          column-gap: 50px;
+  -webkit-column-gap: 4.2%;
+          column-gap: 4.2%;
+}
+
+.request__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.request__headling {
+  width: 100%;
 }
 
 .request__headling span:first-child {
@@ -124,16 +139,70 @@ h6 {
   color: #fff;
 }
 
+.request__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.request__row-elem {
+  max-width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+}
+
+.request__row-icon {
+  width: 92px;
+  height: 85px;
+}
+
+.request__row-icon[data-row-icon="window"] {
+  background-image: url("/assets/icons/request/window.svg");
+  background-repeat: no-repeat;
+}
+
+.request__row-icon[data-row-icon="qualification"] {
+  background-image: url("/assets/icons/request/qualification.svg");
+  background-repeat: no-repeat;
+}
+
+.request__row-icon[data-row-icon="warranty"] {
+  background-image: url("/assets/icons/request/warranty.svg");
+  background-repeat: no-repeat;
+}
+
+.request__row-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3.75%;
+          column-gap: 3.75%;
   padding: 17px 0;
   background-color: #fff;
 }
@@ -142,15 +211,22 @@ h6 {
   width: 100%;
 }
 
+.header__nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-column-gap: 30px;
-  column-gap: 30px;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__nav-elem {
@@ -180,18 +256,15 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 14px;
-  column-gap: 14px;
+          column-gap: 14px;
 }
 
 .button {
   font-weight: 700;
-  font-size: 13px;
-  line-height: 15px;
   color: #fff;
-  padding: 13px 20px 13px 47px;
   border-radius: 3px;
   background-color: #3B3A63;
 }
@@ -202,6 +275,9 @@ h6 {
 
 .header__button {
   position: relative;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 13px 20px 13px 47px;
 }
 
 .header__button::after {
@@ -220,6 +296,100 @@ h6 {
 
 .header__button[data-request="calculation"]::after {
   background: url("/assets/icons/header/calculation.png") no-repeat center;
+}
+
+.request-form__button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 19px 40px;
+}
+
+.request-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+  position: relative;
+  padding: 43px 40px 66px 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.request-form__header {
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2F2F51;
+}
+
+.request-form__input {
+  background: #E2E2E2;
+  border-radius: 3px;
+  padding: 12px 12px 12px 16px;
+}
+
+.request-form__privacy-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin-bottom: 9px;
+}
+
+.request-form__privacy-policy p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.request-form__checkbox-label {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: #E2E2E2;
+  border-radius: 3px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.request-form__checkbox {
+  display: none;
+}
+
+.request-form__checkbox:checked + label::before {
+  content: url("/assets/icons/request/check.svg");
+  display: block;
+  width: 20px;
+  height: 21px;
+  position: absolute;
+  left: 4px;
+  bottom: 7px;
+}
+
+.request-form__img {
+  width: 115%;
+  position: absolute;
+  left: -11px;
+  bottom: -23px;
+}
+
+.request-form__img img {
+  width: 100%;
 }
 
 body {

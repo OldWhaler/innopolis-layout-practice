@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 3.75%;
   padding: 17px 0;
   background-color: #fff;
 
@@ -11,10 +12,14 @@
     }
   }
 
+  &__nav {
+    flex-grow: 1;
+  }
+
   &__nav-list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 30px;
   }
 
   &__nav-elem {
@@ -45,4 +50,5 @@
     align-items: center;
     column-gap: 14px;
   }
+
 }

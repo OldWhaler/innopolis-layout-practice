@@ -4,16 +4,23 @@
   background-image: url('/assets/images/request/bg.jpg');
 
   &__wrapper {
-    padding: 0 85px;
+    padding: 0 7%;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 50px;
+    column-gap: 4.2%;
   }
 
-  &__benefits {}
+  &__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
 
   &__headling {
+    width: 100%;
+
     & span:first-child {
       display: block;
       font-weight: 700;
@@ -33,19 +40,44 @@
 
   }
 
-  &__row {}
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-  &__row-elem {}
+  &__row-elem {
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
 
-  &__row-icon {}
+  &__row-icon {
+    width: 92px;
+    height: 85px;
 
-  &__row-desc {}
+    &[data-row-icon="window"] {
+      background-image: url('/assets/icons/request/window.svg');
+      background-repeat: no-repeat;
+    }
 
-  &__form {}
+    &[data-row-icon="qualification"] {
+      background-image: url('/assets/icons/request/qualification.svg');
+      background-repeat: no-repeat;
+    }
 
-  &__form-header {}
+    &[data-row-icon="warranty"] {
+      background-image: url('/assets/icons/request/warranty.svg');
+      background-repeat: no-repeat;
+    }
+  }
 
-  &__img {}
-
-  &__button {}
+  &__row-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+  }
 }

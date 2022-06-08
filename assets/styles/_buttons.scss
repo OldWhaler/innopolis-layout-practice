@@ -1,9 +1,6 @@
 .button {
   font-weight: 700;
-  font-size: 13px;
-  line-height: 15px;
   color: #fff;
-  padding: 13px 20px 13px 47px;
   border-radius: 3px;
   background-color: $mainColor2;
 
@@ -14,6 +11,9 @@
 
 .header__button {
   position: relative;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 13px 20px 13px 47px;
 
   &::after {
     content: "";
@@ -33,4 +33,11 @@
   &[data-request="calculation"]::after {
     background: url('/assets/icons/header/calculation.png') no-repeat center;
   }
+}
+
+.request-form__button {
+  align-self: center;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 19px 40px;
 }
