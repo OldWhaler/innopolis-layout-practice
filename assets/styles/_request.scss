@@ -57,21 +57,8 @@
   &__row-icon {
     width: 92px;
     height: 85px;
-
-    &[data-row-icon="window"] {
-      background-image: url('/assets/icons/request/window.svg');
-      background-repeat: no-repeat;
-    }
-
-    &[data-row-icon="qualification"] {
-      background-image: url('/assets/icons/request/qualification.svg');
-      background-repeat: no-repeat;
-    }
-
-    &[data-row-icon="warranty"] {
-      background-image: url('/assets/icons/request/warranty.svg');
-      background-repeat: no-repeat;
-    }
+    position: relative;
+    left: -9px;
   }
 
   &__row-desc {

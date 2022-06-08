@@ -173,21 +173,8 @@ h6 {
 .request__row-icon {
   width: 92px;
   height: 85px;
-}
-
-.request__row-icon[data-row-icon="window"] {
-  background-image: url("/assets/icons/request/window.svg");
-  background-repeat: no-repeat;
-}
-
-.request__row-icon[data-row-icon="qualification"] {
-  background-image: url("/assets/icons/request/qualification.svg");
-  background-repeat: no-repeat;
-}
-
-.request__row-icon[data-row-icon="warranty"] {
-  background-image: url("/assets/icons/request/warranty.svg");
-  background-repeat: no-repeat;
+  position: relative;
+  left: -9px;
 }
 
 .request__row-desc {
