@@ -5,10 +5,137 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Окна Хаус</title>
 </head>
 
 <body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__logo">
+        <img src="./assets/images/logo.png" alt="logo">
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-elem">Услуги</li>
+          <li class="header__nav-elem header__nav-elem_active">Продукция</li>
+          <li class="header__nav-elem">О компании</li>
+          <li class="header__nav-elem">Портфолио</li>
+          <li class="header__nav-elem">Вопрос-ответ</li>
+          <li class="header__nav-elem">Контакты</li>
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <button class="header__button button button_colored" data-request="froze">Заявка на замер</button>
+        <button class="header__button button" data-request="calculation">Заказать расчет</button>
+      </div>
+    </header>
+  </div>
+
+  <article class="request">
+    <div class="wrapper">
+
+      <div class="request__wrapper">
+
+        <div class="request__benefits">
+          <h1 class="request__headling">
+            <span>Окна Хаус -</span>
+            <span>Профессиональный подход к остеклению</span>
+          </h1>
+          <div class="request__row">
+            <div class="request__row-elem">
+              <img src="/assets/icons/request/window.svg" alt="" class="request__row-icon">
+              <p class="request__row-desc">Современные окна и балконные конструкции по доступным ценам</p>
+            </div>
+            <div class="request__row-elem">
+              <img src="/assets/icons/request/qualification.svg" alt="" class="request__row-icon">
+              <p class="request__row-desc">Квалифицированный подход к решению задач любой сложности</p>
+            </div>
+            <div class="request__row-elem">
+              <img src="/assets/icons/request/warranty.svg" alt="" class="request__row-icon">
+              <p class="request__row-desc">Гарантия высочайшего качества нашей продукции</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" class="request-form">
+          <h2 class="request-form__header headling">Вызвать замершика на дом</h2>
+          <input class="request-form__input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          <input class="request-form__input" type="tel" name="tel" placeholder="Номер телефона">
+          <input class="request-form__input" type="email" name="email" placeholder="E-mail">
+          <div class="request-form__privacy-policy">
+            <input class="request-form__checkbox" type="checkbox" name="" id="request-form__checkbox" checked>
+            <label class="request-form__checkbox-label" for="request-form__checkbox"></label>
+            <p>Согласен на обработку персональных данных в соответствии с
+              <a href="#">политикой конфиденциальности</a>
+            </p>
+          </div>
+          <button class="request-form__button button button_colored">Отправить заявку</button>
+
+          <div class="request-form__img">
+            <img src="./assets/images/request/ruler.png" alt="ruler image">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </article>
+
+  <main>
+    <div class="wrapper">
+      <section class="services">
+        <h2 class="services__header headling">Наши услуги</h2>
+        <ul class="services__list">
+
+          <li class="services__item" data-services-img="installation">
+            <div class="services__item-row">
+              <img class="services__item-img" src="/assets/icons/services/installation.svg" alt="installation icon">
+              <h3 class="services__item-header headling"><span>Установка</span>пластиковых окон</h3>
+            </div>
+            <p class="services__item-desc">Устанавливаем пластиковые окна Rehau от проверенного производителя с
+              гарантией качества</p>
+          </li>
+
+          <li class="services__item" data-services-img="balcony">
+            <div class="services__item-row">
+              <img class="services__item-img" src="/assets/icons/services/balcony.svg" alt="balcony icon">
+              <h3 class="services__item-header headling"><span>Остекление балконов</span>и лоджий</h3>
+            </div>
+            <p class="services__item-desc">Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное
+              остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
+          </li>
+
+          <li class="services__item" data-services-img="cottage">
+            <div class="services__item-row">
+              <img class="services__item-img" src="/assets/icons/services/cottage.svg" alt="cottage icon">
+              <h3 class="services__item-header headling"><span>Остекление</span>коттеджей и дач</h3>
+            </div>
+            <p class="services__item-desc">Остекление и отделка под ключ: от коттеджей и дач до террас и беседок.
+              Выделяем личного технолога под каждый объект</p>
+          </li>
+
+          <li class="services__item" data-services-img="corporate">
+            <div class="services__item-row">
+              <img class="services__item-img" src="/assets/icons/services/corporate-objects.svg"
+                alt="corporate-objects icon">
+              <h3 class="services__item-header headling"><span>Остекление</span>корпоративных объектов</h3>
+            </div>
+            <p class="services__item-desc">Реализуем сложные проекты по остеклению торговых центров, ресторанов,
+              производственных помещений и офисов</p>
+          </li>
+
+        </ul>
+
+      </section>
+    </div>
+  </main>
+
+
+
 
 </body>
 

@@ -1,0 +1,66 @@
+.services {
+  padding: 67px 0 37px 0;
+
+  &__header {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 0.8%;
+  }
+
+  &__item {
+    flex-basis: 49.6%;
+    padding: 55px 0 32px 50px;
+    border-radius: 3px;
+    background-color: #bcbcd3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &[data-services-img="installation"] {
+      background: url('/assets/images/services/installation.jpg') 0 0/cover no-repeat;
+    }
+
+    &[data-services-img="balcony"] {
+      background: url('/assets/images/services/balcony.jpg') 0 0/cover no-repeat;
+    }
+
+    &[data-services-img="cottage"] {
+      background: url('/assets/images/services/cottage.jpg') 0 0/cover no-repeat;
+    }
+
+    &[data-services-img="corporate"] {
+      background: url('/assets/images/services/corporate.jpg') 0 0/cover no-repeat;
+    }
+  }
+
+  &__item-row {
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+    margin-bottom: 30px;
+  }
+
+  &__item-img {}
+
+  &__item-header {
+    text-align: left;
+    font-size: 24px;
+    line-height: 28px;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__item-desc {
+    width: 60%;
+    color: #2F2F51;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
