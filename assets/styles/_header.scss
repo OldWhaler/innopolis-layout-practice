@@ -24,10 +24,12 @@
 
   &__nav-elem {
     position: relative;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000;
-    cursor: pointer;
+
+    & a {
+      color: #000;
+      font-size: 16px;
+      line-height: 19px;
+    }
 
     &_active {
       color: $mainColor1;
