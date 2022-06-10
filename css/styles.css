@@ -224,10 +224,12 @@ h6 {
 
 .header__nav-elem {
   position: relative;
+}
+
+.header__nav-elem a {
+  color: #000;
   font-size: 16px;
   line-height: 19px;
-  color: #000;
-  cursor: pointer;
 }
 
 .header__nav-elem_active {
@@ -339,9 +341,6 @@ h6 {
   -webkit-column-gap: 10px;
           column-gap: 10px;
   margin-bottom: 9px;
-}
-
-.request-form__privacy-policy p {
   font-size: 12px;
   line-height: 14px;
   color: #000000;
