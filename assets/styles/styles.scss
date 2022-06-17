@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./buttons";
+
+body {
+  font-family: $mainFont;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    color: $mainColor1;
+  }
+}
