@@ -20,9 +20,14 @@
         <img src="./assets/images/logo.png" alt="logo">
       </div>
       <nav class="header__nav">
+        <div class="burger">
+          <div class="burger__item"></div>
+          <div class="burger__item"></div>
+          <div class="burger__item"></div>
+        </div>
         <ul class="header__nav-list">
           <li class="header__nav-elem"><a href="#services">Услуги</a></li>
-          <li class="header__nav-elem header__nav-elem_active"><a href="#">Продукция</a></li>
+          <li class="header__nav-elem"><a href="#">Продукция</a></li>
           <li class="header__nav-elem"><a href="#">О компании</a></li>
           <li class="header__nav-elem"><a href="#">Портфолио</a></li>
           <li class="header__nav-elem"><a href="#">Вопрос-ответ</a></li>
@@ -136,7 +141,7 @@
         <h2 class="products__header headling">Продукция</h2>
 
         <ul class="products__row">
-          <li class="products__row-item products__row-item_selected">Стандарт</li>
+          <li class="products__row-item">Стандарт</li>
           <li class="products__row-item">Бизнес</li>
           <li class="products__row-item">Премиум</li>
           <li class="products__row-item">Эксклюзив</li>
@@ -177,6 +182,7 @@
       </section>
 
       <section class="quality">
+        <img src="/assets/images/quality/quality-text.png" class="quality__logo" alt="quality__logo">
         <div class="quality__row">
           <div class="quality__item">
             <div class="quality__item-icon">
@@ -209,8 +215,10 @@
             <p class="quality__item-desc">Широкий ассортимент продукции</p>
           </div>
         </div>
-        <button class="button quality__button" data-request="calculation">Заказать расчет</button>
       </section>
+
+      <button class="button quality__button" data-request="calculation">Заказать расчет</button>
+
     </div>
   </main>
 

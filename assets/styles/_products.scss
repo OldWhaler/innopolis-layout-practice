@@ -21,9 +21,11 @@
     font-size: 18px;
     line-height: 21px;
     color: $headerColorDark;
+    transition-duration: 300ms;
+    transition-property: background-color;
     cursor: pointer;
 
-    &_selected {
+    &:hover {
       color: #fff;
       border-radius: 3px;
       background-color: $mainColor1;
@@ -31,7 +33,8 @@
   }
 
   &__card {
-    margin: 0 2.3%;
+    max-width: 1145px;
+    margin: 0 auto;
     border-radius: 3px;
     overflow: hidden;
     display: flex;
@@ -43,6 +46,8 @@
 
       img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -101,5 +106,11 @@
     font-weight: 700;
     flex-grow: 0;
     min-width: 110px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .products {
+    padding: 33px 0 60px 0;
   }
 }
