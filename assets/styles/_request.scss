@@ -45,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 35px;
   }
 
   &__row-elem {
@@ -66,5 +67,20 @@
     font-size: 14px;
     line-height: 18px;
     color: #fff;
+  }
+}
+
+@media screen and(max-width:992px) {
+  .request {
+    background-size: cover;
+
+    &__wrapper {
+      justify-content: flex-start;
+      padding-left: 21px;
+    }
+
+    &__benefits {
+      max-width: 585px;
+    }
   }
 }
