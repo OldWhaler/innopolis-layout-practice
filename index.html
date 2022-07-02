@@ -17,7 +17,7 @@
 
     <header class="header">
       <div class="header__logo">
-        <img src="./assets/images/logo.png" alt="logo">
+        <img src="./assets/images/logo.svg" alt="logo">
       </div>
       <nav class="header__nav">
         <div class="burger">
@@ -140,11 +140,11 @@
       <section class="products">
         <h2 class="products__header headling">Продукция</h2>
 
-        <ul class="products__row">
-          <li class="products__row-item">Стандарт</li>
-          <li class="products__row-item">Бизнес</li>
-          <li class="products__row-item">Премиум</li>
-          <li class="products__row-item">Эксклюзив</li>
+        <ul class="products__row row">
+          <li class="row__item">Стандарт</li>
+          <li class="row__item">Бизнес</li>
+          <li class="row__item">Премиум</li>
+          <li class="row__item">Эксклюзив</li>
         </ul>
 
         <div class="products__card">
@@ -217,8 +217,91 @@
         </div>
       </section>
 
-      <button class="button quality__button" data-request="calculation">Заказать расчет</button>
+      <button class="button quality-button" data-request="calculation">Заказать расчет</button>
 
+
+      <section class="about">
+        <h2 class="about__header headling">О компании</h2>
+
+        <ul class="about__list row">
+          <li class="row__item">Описание</li>
+          <li class="row__item">Как мы работаем</li>
+          <li class="row__item">Отзывы</li>
+          <li class="row__item">Сертификаты</li>
+        </ul>
+
+        <div class="about__row">
+          <div class="about__desc">
+            <div class="about__desc-img">
+              <img src="./assets/images/logo.svg" alt="logo">
+            </div>
+            <p class="about__desc-text">Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам
+              окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень
+              важно, чтобы Вы сделали правильный выбор.</p>
+          </div>
+          <div class="about__image">
+            <img src="./assets/images/about/about-img.jpg" alt="about-img">
+          </div>
+        </div>
+
+        <div class="about__excellences">
+          <div class="about__excellences-item excellences-item">
+            <div class="excellences-item__icon">
+              <img src="./assets/icons/about/professionalism.png" alt="icon">
+            </div>
+            <div class="excellences-item__text">
+              <h4 class="excellences-item__headling">Профессионализм</h4>
+              <p class="excellences-item__desc">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
+            </div>
+          </div>
+          <div class="about__excellences-item excellences-item">
+            <div class="excellences-item__icon">
+              <img src="./assets/icons/about/pricing.png" alt="icon">
+            </div>
+            <div class="excellences-item__text">
+              <h4 class="excellences-item__headling">Ценообразование</h4>
+              <p class="excellences-item__desc">Лучшие цены на рынке пластиковых окон</p>
+            </div>
+          </div>
+          <div class="about__excellences-item excellences-item">
+            <div class="excellences-item__icon">
+              <img src="./assets/icons/about/mobility.png" alt="icon">
+            </div>
+            <div class="excellences-item__text">
+              <h4 class="excellences-item__headling">Мобильность</h4>
+              <p class="excellences-item__desc">Заключение договора на дому</p>
+            </div>
+          </div>
+          <div class="about__excellences-item excellences-item">
+            <div class="excellences-item__icon">
+              <img src="./assets/icons/about/loyalty.png" alt="icon">
+            </div>
+            <div class="excellences-item__text">
+              <h4 class="excellences-item__headling">Лояльность</h4>
+              <p class="excellences-item__desc">99% клиентов рекомендуют нас своим друзьям</p>
+            </div>
+          </div>
+          <div class="about__excellences-item excellences-item">
+            <div class="excellences-item__icon">
+              <img src="./assets/icons/about/speed.png" alt="icon">
+            </div>
+            <div class="excellences-item__text">
+              <h4 class="excellences-item__headling">Скорость</h4>
+              <p class="excellences-item__desc">Короткие сроки установки изделий</p>
+            </div>
+          </div>
+          <div class="about__excellences-item excellences-item">
+            <div class="excellences-item__icon">
+              <img src="./assets/icons/about/quality-service.png" alt="icon">
+            </div>
+            <div class="excellences-item__text">
+              <h4 class="excellences-item__headling">Служба качества</h4>
+              <p class="excellences-item__desc">Безупречное качество и контроль изделий ПВХ</p>
+            </div>
+          </div>
+        </div>
+        <button class="about__button button button_colored">Оформить заявку на замер</button>
+      </section>
     </div>
   </main>
 

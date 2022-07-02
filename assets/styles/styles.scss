@@ -8,6 +8,7 @@
 @import "./services";
 @import "./products";
 @import "./quality";
+@import "./about";
 
 body {
   font-family: $mainFont;
@@ -25,5 +26,29 @@ main {
   @media screen and (max-width:992px) {
     max-width: 900px;
     padding: 10px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+
+  &__item {
+    padding: 10px 25px;
+
+    font-size: 18px;
+    line-height: 21px;
+    color: $headerColorDark;
+    transition-duration: 300ms;
+    transition-property: background-color;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      border-radius: 3px;
+      background-color: $mainColor1;
+    }
   }
 }

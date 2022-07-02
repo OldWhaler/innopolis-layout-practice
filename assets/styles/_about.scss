@@ -1,0 +1,157 @@
+.about {
+  padding: 55px 0 87px 0;
+
+  &__header {
+    margin-bottom: 34px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  &__row {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 70px;
+  }
+
+  &__desc {
+    background-color: #fff;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    padding: 45px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 60px;
+  }
+
+  &__desc-img {
+    width: 250px;
+    padding-left: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__desc-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    align-self: flex-end;
+    padding-right: 50px;
+    max-width: 350px;
+  }
+
+  &__image {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__excellences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 110px;
+    column-gap: 5%;
+    margin-bottom: 80px;
+    padding: 0 4%;
+  }
+}
+
+.excellences-item {
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 30%;
+  display: flex;
+  column-gap: 8%;
+
+  &__icon {
+    margin-top: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__headling {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $headerColorDark;
+  }
+
+  &__desc {
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width:1120px) {
+  .excellences-item {
+    column-gap: 5%;
+
+    &__text {
+      row-gap: 10px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .about {
+    padding: 0;
+
+    &__row {
+      margin-bottom: 80px;
+    }
+
+    &__desc-img {
+      width: 228px;
+      padding-left: 28px;
+    }
+
+    &__excellences {
+      padding: 0 5.6%;
+      margin-bottom: 60px;
+    }
+  }
+
+  .excellences-item {
+    column-gap: 8%;
+    width: 44%;
+
+    &__text {
+      row-gap: 15px;
+      font-size: 16px;
+    }
+  }
+}
