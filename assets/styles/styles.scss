@@ -9,6 +9,8 @@
 @import "./products";
 @import "./quality";
 @import "./about";
+@import "./portfolio";
+@import "./faq";
 
 body {
   font-family: $mainFont;
@@ -16,6 +18,10 @@ body {
 
 main {
   background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .wrapper {
