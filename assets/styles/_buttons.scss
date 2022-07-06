@@ -85,3 +85,19 @@
     background: url('/assets/icons/header/froze.png') no-repeat center;
   }
 }
+
+.faq__arrow-button {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid $headerColorDark;
+  border-left: 2px solid $headerColorDark;
+  transform: rotate(-45deg);
+  transition-duration: 300ms;
+
+  &_modified {
+    transform: rotate(135deg);
+  }
+}
