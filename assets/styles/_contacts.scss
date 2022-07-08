@@ -1,0 +1,155 @@
+.contacts {
+  padding: 40px 0;
+
+  &__header {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 58px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__desc {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+
+  &__desc-header {
+    padding-left: 5px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    color: $headerColorDark;
+  }
+
+  &__phones {
+    position: relative;
+    padding-left: 52px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+    font-weight: 700;
+    font-size: 22px;
+
+    a {
+      color: #000;
+    }
+
+    &::before {
+      content: url('/assets/icons/contacts/phone.png');
+      position: absolute;
+      left: 0;
+      top: -2px;
+      display: block;
+      width: 25px;
+      height: 27px;
+    }
+  }
+
+  &__address,
+  &__mail {
+    display: block;
+    position: relative;
+    padding-left: 52px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+  }
+
+  &__address {
+    margin-bottom: 25px;
+
+    &::before {
+      content: url('/assets/icons/contacts/geo.png');
+      position: absolute;
+      left: 0;
+      top: -4px;
+      display: block;
+      width: 20px;
+      height: 25px;
+    }
+
+  }
+
+  &__mail {
+    margin-bottom: 58px;
+
+    &::before {
+      content: url('/assets/icons/contacts/mail.png');
+      position: absolute;
+      left: 0;
+      top: -4px;
+      display: block;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    max-width: 230px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $headerColorDark;
+  }
+
+  &__img {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    position: relative;
+    left: 15px;
+    top: 40px;
+    z-index: 10;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 196px;
+  }
+}
+
+@media screen and (max-width:992px) {
+
+  .contacts {
+    padding-top: 0;
+    padding-bottom: 25px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__desc {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    &__row {
+      column-gap: 45px;
+    }
+
+    &__img {
+      left: 0;
+      top: 0;
+    }
+  }
+
+
+}
