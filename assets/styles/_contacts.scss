@@ -37,6 +37,34 @@
     font-weight: 700;
     font-size: 22px;
 
+    &:hover {
+      &::before {
+        animation-name: phone-ring;
+        animation-timing-function: linear;
+        animation-duration: 350ms;
+        animation-iteration-count: infinite;
+        animation-delay: 200ms;
+      }
+    }
+
+    @keyframes phone-ring {
+      0% {
+        transform: rotate(-10deg);
+      }
+
+      25% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(10deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
     a {
       color: #000;
     }
@@ -75,6 +103,27 @@
       height: 25px;
     }
 
+    &:hover {
+      &::before {
+        animation-name: icon-fall;
+        animation-duration: 400ms;
+        animation-timing-function: linear;
+        animation-delay: 200ms;
+      }
+    }
+
+    @keyframes icon-fall {
+      0% {
+        top: -32px;
+        transform: scale(1.1);
+        opacity: 0.2;
+      }
+
+      100% {
+        top: 0;
+      }
+    }
+
   }
 
   &__mail {
@@ -88,6 +137,27 @@
       display: block;
       width: 22px;
       height: 22px;
+    }
+
+    &:hover {
+      &::before {
+        animation-name: icon-from-left;
+        animation-duration: 400ms;
+        animation-timing-function: linear;
+        animation-delay: 200ms;
+      }
+    }
+
+    @keyframes icon-from-left {
+      0% {
+        left: -40px;
+        transform: scale(1.1);
+        opacity: 0.2;
+      }
+
+      100% {
+        left: 0;
+      }
     }
   }
 
