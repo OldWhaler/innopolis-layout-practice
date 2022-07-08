@@ -1,0 +1,43 @@
+.footer {
+  background-color: $mainColor3;
+  padding: 52px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+  }
+
+  &__logo {
+    width: 55px;
+    height: 39px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  &__conditions {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    a {
+      font-size: 14px;
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+  }
+}

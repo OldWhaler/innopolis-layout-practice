@@ -3,14 +3,18 @@
 @import "./headlings";
 @import "./request";
 @import "./header";
+@import "./burger";
 @import "./buttons";
-@import "./request-form";
+@import "./form";
 @import "./services";
 @import "./products";
 @import "./quality";
 @import "./about";
 @import "./portfolio";
 @import "./faq";
+@import "./contacts";
+@import "./footer";
+
 
 body {
   font-family: $mainFont;
@@ -22,6 +26,11 @@ main {
 
 .visually-hidden {
   display: none;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+
 }
 
 .wrapper {
@@ -46,7 +55,7 @@ main {
 
     font-size: 18px;
     line-height: 21px;
-    color: $headerColorDark;
+    color: $mainColor3;
     transition-duration: 300ms;
     transition-property: background-color;
     cursor: pointer;
