@@ -1,0 +1,32 @@
+.burger {
+  position: absolute;
+  left: 0;
+  top: 31px;
+  display: none;
+  flex-direction: column;
+  row-gap: 7px;
+  width: 56px;
+  cursor: pointer;
+  transition-duration: 300ms;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    height: 7px;
+    background-color: $mainColor1;
+    border-radius: 2px;
+  }
+
+  &__item {
+    height: 7px;
+    background-color: $mainColor1;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .burger {
+    display: flex;
+  }
+}

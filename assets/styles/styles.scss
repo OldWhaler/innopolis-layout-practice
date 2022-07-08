@@ -3,6 +3,7 @@
 @import "./headlings";
 @import "./request";
 @import "./header";
+@import "./burger";
 @import "./buttons";
 @import "./form";
 @import "./services";
@@ -25,6 +26,11 @@ main {
 
 .visually-hidden {
   display: none;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+
 }
 
 .wrapper {

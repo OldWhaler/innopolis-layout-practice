@@ -100,23 +100,6 @@
       padding-left: 10%;
     }
 
-    & .burger {
-      position: absolute;
-      left: 0;
-      top: 31px;
-      display: flex;
-      flex-direction: column;
-      row-gap: 7px;
-      width: 56px;
-      cursor: pointer;
-
-      &__item {
-        height: 7px;
-        background-color: $mainColor1;
-        border-radius: 2px;
-      }
-    }
-
     &__nav-list {
       display: none;
     }
